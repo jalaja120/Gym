@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(PICS/pexels-pixabay-268134.jpg);
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        header div a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 2.2rem;
+            font-weight: lighter;
+            font-family: 'Impact', sans-serif;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        header div a:hover {
+            color: #ffae00;
+            transform: scale(1.2);
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        header nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            flex-grow: 1;
+        }
+        .service-card {
+            background: rgba(5, 5, 5, 0.545);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .service-card h3 {
+            color: #ffd700;
+        }
+        .service-card p {
+            font-size: 0.9rem;
+        }
+        /* Remove blue color and underline for links */
+        .service-card a {
+            color: inherit; /* Inherit color from parent */
+            text-decoration: none; /* Remove underline */
+            display: block; /* Make the whole card clickable */
+            height: 100%; /* Ensure the link fills the card */
+        }
+        .service-card a:hover {
+            color: #ffae00; /* Optionally, you can add hover effects for the links */
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: rgb(195, 189, 189);
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            bottom: -10;
+            width: 100%;
+            z-index: 1000;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><a href="index.html">GYMANCE</a></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="services-container">
+        <div class="service-card">
+            <a href="sp1.html">
+                <h3>Personal Training</h3>
+                <p>One-on-one training sessions tailored to your fitness goals.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp2.html">
+                <h3>Group Fitness</h3>
+                <p>Join our high-energy group classes for a fun and effective workout.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp3.html">
+                <h3>Yoga</h3>
+                <p>Relax your mind and strengthen your body with calming yoga sessions.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp4.html">
+                <h3>Dance Classes</h3>
+                <p>Learn salsa, hip-hop, or Zumba with our expert dance instructors.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp5.html">
+                <h3>Weight Training</h3>
+                <p>Access state-of-the-art equipment for building strength and muscle.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp6.html">
+                <h3>Cardio Training</h3>
+                <p>Boost your heart health with our variety of cardio-focused sessions.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp7.html">
+                <h3>Nutrition Coaching</h3>
+                <p>Get personalized nutrition advice to complement your fitness goals.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp8.html">
+                <h3>Stretching & Mobility</h3>
+                <p>Improve flexibility and prevent injuries with our stretching classes.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp9.html">
+                <h3>Kids Fitness</h3>
+                <p>Fun fitness sessions designed specifically for children.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GYMANCE. All rights reserved.</p>
+    </footer>
+</body>
+</html>
